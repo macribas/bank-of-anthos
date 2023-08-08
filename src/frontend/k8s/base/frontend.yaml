@@ -114,12 +114,14 @@ spec:
           periodSeconds: 15
           timeoutSeconds: 30
         resources:
-          requests:
-            cpu: 100m
-            memory: 64Mi
           limits:
             cpu: 250m
-            memory: 128Mi
+            ephemeral-storage: 1Gi
+            memory: 512Mi
+          requests:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512Mi
 ---
 apiVersion: v1
 kind: Service
