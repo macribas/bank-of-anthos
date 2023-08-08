@@ -18,5 +18,6 @@ resources:
   - ../../base
 components:
   - ../../components/init-db-job
-  - ../../../../../components/staging
   - ../../../../../components/cloud-sql
+  - ../../../../../components/staging
+  - ../../../../../components/bank-of-anthos-service-account

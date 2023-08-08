@@ -20,3 +20,4 @@ components:
   - ../../components/init-db-job
   - ../../../../../components/cloud-sql
   - ../../../../../components/production
+  - ../../../../../components/bank-of-anthos-service-account
