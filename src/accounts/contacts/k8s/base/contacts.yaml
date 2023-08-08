@@ -59,14 +59,14 @@ spec:
         - configMapRef:
             name: accounts-db-config
         resources:
-          requests:
-            cpu: 100m
-            memory: 64Mi
-            ephemeral-storage: 0.25Gi
           limits:
             cpu: 250m
-            memory: 128Mi
-            ephemeral-storage: 0.25Gi
+            ephemeral-storage: 1Gi
+            memory: 512Mi
+          requests:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512Mi
         readinessProbe:
           httpGet:
             path: /ready

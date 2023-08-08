@@ -54,9 +54,11 @@ spec:
         - name: LOG_LEVEL
           value: "error"
         resources:
-          requests:
-            cpu: 100m
-            memory: 512Mi
           limits:
             cpu: 250m
-            memory: 1Gi
+            ephemeral-storage: 1Gi
+            memory: 512Mi
+          requests:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512Mi
